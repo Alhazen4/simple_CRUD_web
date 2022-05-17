@@ -1,0 +1,153 @@
+body::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+	margin: 0;
+}
+
+main .motto {
+	margin: 1em;
+}
+
+main .motto h1 {
+	text-align: center;
+	margin: 2.5em 0;
+}
+
+.search-bar {
+	margin: 5em 0;
+}
+
+form {
+	text-align: center;
+}
+
+input[type="search"] {
+	width: 30vw;
+	height: 4vh;
+	padding: 1.5em;
+	border: none;
+	border-radius: 10px;
+	background: #ffffff;
+	box-shadow: 0.5em 0.2em 1.5em -0.9em;
+}
+
+button {
+	width: 5em;
+	height: 2.5em;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0.5em 0.2em 1.5em -0.9em;
+}
+
+/* bagian cardview hospital profile */
+.card-main-pict {
+	/* Add shadows to create the "card" effect */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	width: 50vmax;
+	border-radius: 10px;
+	margin: 0 0 5em 6em;
+}
+
+.card-main-pict img {
+	width: 50vmax;
+	border-radius: 10px 10px 0px 0px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card-main-pict:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.card-caption {
+	padding: 2px 16px;
+}
+/* end of bagian cardview hospital preview */
+
+/* bagian side informartion */
+
+.main {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.sidebar {
+	width: 30vmax;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	margin: 0 6em 5em 0;
+	border-radius: 10px;
+}
+
+.sidebar ul {
+	list-style: none;
+	margin-top: 15%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	/* align-items: center; */
+}
+
+.sidebar li {
+	/* margin-top: 10px; */
+	margin-bottom: 20%;
+	width: 100%;
+	height: 100%;
+	width: 100%;
+	height: 100%;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+}
+
+.sidebar h2 {
+	text-align: center;
+}
+
+/* .main .sidebar ul li {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+} */
+
+main .doctor-list ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style: none;
+}
+
+.doctor-list h2 {
+	text-align: center;
+	margin: 0 0 5vh 0;
+}
+
+/* bagian cardview doctor profile list*/
+.doc-highlight {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	width: 15vmax;
+	border-radius: 10px;
+	margin: 0 0 5em 6em;
+}
+
+.doc-highlight img {
+	width: 15vmax;
+	border-radius: 10px 10px 0px 0px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.doc-highlight:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.card-caption {
+	padding: 2px 16px;
+}
+/* end of bagian cardview doctor profile list */

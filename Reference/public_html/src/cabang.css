@@ -1,0 +1,103 @@
+body::-webkit-scrollbar {
+	display: none;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+}
+
+main .cabang {
+	/* margin: auto; */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	/* column-gap: 0%; */
+}
+
+/* card view */
+.card img {
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+}
+
+main .cabang .card {
+	/* Add shadows to create the "card" effect */
+	margin-top: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	width: 18%;
+	height: 280px;
+	border: none;
+	border-radius: 10px;
+	background: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+/* On mouse-over, add a deeper shadow */
+main .cabang .card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+	padding: 2px 16px;
+}
+
+/* button {
+	box-sizing: border-box;
+	background: none;
+	border: none;
+	border-radius: 10px;
+} */
+/* end card view */
+
+h4 {
+	margin-bottom: -10px;
+	margin-top: 10px;
+}
+
+.title {
+	text-align: center;
+}
+
+.geo-loc {
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.geo-loc #map {
+top: 0;
+bottom: 0;
+width: 1300px;
+height: 700px;
+margin-bottom: 50px;
+}
+
+.marker {
+background-image: url('../assets/images/pin-map.png');
+background-size: cover;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.mapboxgl-popup {
+max-width: 200px;
+}
+
+.mapboxgl-popup-content {
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+}

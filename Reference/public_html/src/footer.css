@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+	width: 100vw;
+	height: 25vh;
+	background: #3db2ff;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-around;
+	column-gap: 20em;
+	row-gap: 1em;
+}
+
+.partner {
+	padding: 0 5em;
+}
+
+footer > div > ul > li {
+	list-style: none;
+}
+
+footer > .socmed > ul > li {
+	padding: 0 0 1em 0;
+}
+
+ul {
+	padding: 0 3em 0 3em;
+	margin: 0;
+}
+
+footer > div > ul > li > a > img {
+	width: 5em;
+	height: 2em;
+}
+
+footer > .contact > ul > li {
+	padding: 0 0 1em 0;
+}
+
+a,
+a:active,
+a:visited {
+	color: black;
+}
+
+.socmed {
+	margin: 0 0 0 1em;
+}
+
+.contact {
+	margin: 0 1em 0 0;
+}
+
+/* .socmed > a {
+	font-size: 2rem;
+} */

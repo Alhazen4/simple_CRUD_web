@@ -1,0 +1,90 @@
+main {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	row-gap: 20px;
+	/* margin: 0 20% 0 20%; */
+}
+
+.doc-detail {
+	background-color: white; /* warna putih nanti */
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	margin: 5% 20% 0 20%;
+	padding: 5%;
+	display: grid;
+	grid-gap: 10px;
+}
+
+.doc-detail {
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 2fr 50px 3fr;
+}
+
+.img {
+	/* background-color: gray; */
+	align-self: start;
+	grid-row: 1 / span 2;
+}
+
+img {
+	height: 115px;
+	width: 160px;
+}
+
+.sub-detail ul,
+.sub-detail-waktu ul {
+	/* color: azure; */
+	list-style: none;
+}
+
+.sub-detail-waktu,
+.doc-desc {
+	grid-row: 3 / 4;
+}
+
+.sub-detail-waktu {
+	align-self: center;
+}
+
+.pas-detail {
+	background-color: white; /* warna putih nanti */
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	margin: 0 20% 3% 20%;
+	padding: 5%;
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.pas-detail h2 {
+	text-align: center;
+}
+
+form {
+	display: grid;
+	grid-gap: 10px;
+	justify-items: stretch;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 1fr 3fr 1fr;
+}
+
+form #jam {
+	grid-column: 3 / 4;
+}
+
+form #keluhan {
+	grid-row: 2 / 3;
+	grid-column: 1 / span 4;
+}
+
+button {
+	grid-column: 3 / 4;
+	grid-row: 3 / 4;
+}
+
+/* .pas-detail {
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 1fr 3fr;
+} */

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="src/nav.css" />
+		<script src="https://kit.fontawesome.com/0567db93f5.js" crossorigin="anonymous"></script>
+		<title>Rumah Sakit</title>
+	</head>
+
+    <body>
+      		<!-- navigasi bar yang di atas -->
+		<nav>
+			<ul>
+				<li class="logo">
+					<a href="homepage.php">
+						<img src="assets/images/logorehat.png" alt="logo" />
+					</a>
+				</li>
+				<li class="menu">
+					<a href="findoc.php">Daftar Dokter</a>
+				</li>
+				<li class="menu">
+					<a href="cabang.php">Cabang</a>
+				</li>
+				<li class="menu">
+					<a href="buatjanji.php">Buat Janji</a>
+				</li>
+				<li class="menu profile">
+					<span><img src="assets/images/profile.png" alt="" /></span>
+					<a href="user_profile.php">A</a>
+				</li>
+			</ul>
+		</nav>
+
+      <div style="padding: 70px;">
+        <h1>List of the package room</h1>
+
+        <select name="sorting" onchange="sorting(this.value)">
+            <option value="">Sort by You</option>
+            <option value="1">Cheapest</option>
+            <option value="2">Expensive</option>
+        </select>
+
+        <input type="submit" onclick="css()">
+        
+        <div class="box" id="box">
+        <p><a href=http://rehat.educationhost.cloud/ssip/homepage.html>Back</a></p>
+      </div>
+    </body>
+    
+    <script>
+        function sorting(v) {
+            var http = new XMLHttpRequest();
+            http.onload = function () {
+                document.getElementById("box").innerHTML=this.responseText;
+            }
+            http.open("POST", "sorting.php?v=" + v);
+            http.send();
+        }
+    </script>
+</html>

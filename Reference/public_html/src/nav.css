@@ -1,0 +1,77 @@
+body {
+	margin: 0;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+	width: 100vw;
+	height: 15vh;
+	box-shadow: 0px 1px 1.5px 0.5px rgba(0, 0, 0, 0.2);
+	background-color: #3db2ff;
+}
+
+nav > ul {
+	margin: 0;
+	list-style: none;
+	display: flex;
+	row-gap: 10px;
+	justify-content: space-between;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+nav > ul > li,
+a {
+	text-decoration: none;
+	list-style: none;
+}
+
+nav > ul > li.menu {
+	padding: 0 3rem 0 0;
+}
+
+li.menu a {
+	transition: ease 0.5s;
+}
+
+li.menu a:hover {
+	color: rgb(122, 122, 122);
+}
+
+nav > ul > .logo {
+	margin-right: auto;
+}
+
+nav > ul > .logo > a > img {
+	margin-top: -15px;
+	margin-left: 5px;
+	width: 140px;
+	height: 135px;
+}
+
+li.menu.profile {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	column-gap: 1rem;
+}
+
+nav > ul > li.profile > span > img {
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+
+nav > ul > li.menu > a {
+	color: black;
+	font-size: 1.2rem;
+}
+
+nav > ul > li.menu > a:visited {
+	color: black;
+}
+
+nav > ul > li.menu > a:active {
+	color: white;
+}
