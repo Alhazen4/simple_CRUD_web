@@ -4,6 +4,12 @@
 
     $id = $_SESSION['id'];
 
+    if (empty($id))
+    {
+        echo "<script> alert ('You are not logged on, please log in first!');
+        window.location.href='index.html'; </script>";
+    }
+
     $query = "SELECT * FROM user_data WHERE id = $id";
     $result = mysqli_query($db, $query);
     $fetch = mysqli_fetch_assoc($result); 
