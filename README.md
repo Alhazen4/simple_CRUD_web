@@ -14,5 +14,5 @@ update.html (Update)
 delete.html (Delete)
 ![delete html](https://user-images.githubusercontent.com/62123569/169501992-1a499647-dd55-4e51-b854-01c902485b88.png)
 
-Database
+Database\
 ![database](https://user-images.githubusercontent.com/62123569/169501983-0518ce8d-71d2-4e70-b251-31ee80ac69c5.png)
