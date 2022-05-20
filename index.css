@@ -1,9 +1,90 @@
-.login
-{
-    background-color: aqua;
+
+@font-face {
+    font-family: 'RetroGaming';
+    src: url(src/RetroGaming.ttf);
 }
 
-.regis
+*
 {
-    background-color: aquamarine;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'RetroGaming';
+}
+
+header
+{
+    border-bottom: 1px solid black;
+    text-align: right;
+    padding: 10px;  
+}
+
+p.login_text
+{
+    display: inline;
+    font-weight: bold;
+    font-size: 23px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.login_form
+{
+    display: inline;
+    margin-left: 20px;
+}
+
+input[name="user"],
+input[name="pass"]
+{
+    width: 150px;
+    height: 30px;
+    padding: 5px;
+    font-size: 15px;
+    margin-right: 20px;
+    
+}
+
+.regis_col {
+    float: left;
+    width: 50%;
+    height: 92vh;
+    padding: 21vh 0px 0px 30vh;
+}
+
+img
+{
+    float: left;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+input[name="fname"],
+input[name="lname"],
+input[name="Nuser"],
+input[name="Npass"]
+{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+button
+{
+    background-color: white;
+    border: 1px solid black;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+}
+
+button:hover 
+{
+    background-color: gainsboro;
 }

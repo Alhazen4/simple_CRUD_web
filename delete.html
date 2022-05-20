@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Delete Account</title>
+    <link rel="stylesheet" href="delete.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+
+    <div class="delete_page">
+        <div class="delete_col_1">
+            <h3>Delete Account</h3>
+            <br>
+            <form action="delete.php" method="get">
+                <ul>
+                    <li><label>Insert your Username:</label></li>
+                    <li><input type="text" name="dname"></li>
+                    <li><label>Insert your Password:</label></li>
+                    <li><input type="text" name="dpass"></li>
+                    <li><button type="submit">Delete</button></li>
+                </ul>
+            </form>
+        </div>
+
+        <div class="delete_col_2">
+            <img src="src/dinoFlip.png" alt="Dino">
+        </div>
+    </div>
+</body>
+
+<script>
+    $(function() {
+        $("#nav-placeholder").load("nav.html");
+    });
+</script>
+</html>

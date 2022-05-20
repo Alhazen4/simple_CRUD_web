@@ -1,35 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Simple CRUD Web</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <div class="login">
-        <h2>Log In</h2>
-        <form action="login.php" method="get">
-            <label>Username</label>
+    <header class="login">
+        <p class="login_text">Simple CRUD Web</p>
+        <form class="login_form" action="login.php" method="get">
+            <label >Username</label>
             <input type="text" name="user">
             <label>Password</label>
             <input type="text" name="pass">
-            <input type="submit"> 
+            <button type="submit">Login</button>
         </form>
-    </div>
+    </header>
 
-    <div class="regis">
-        <h2>Register</h2>
-        <form action="register.php" method="post">
-            <label>First Name</label>
-            <input type="text" name="fname"><br> 
-            <label>Last Name</label>
-            <input type="text" name="lname"><br> 
-            <label>New Username</label>
-            <input type="text" name="Nuser"><br> 
-            <label>New Password</label>
-            <input type="text" name="Npass"><br>
-            <button type="submit">Register</button>
-        </form>
+    <div class="regis_page">
+        <div class="regis_col">
+            <img src="src/dino.png" alt="Dino">
+        </div>
+
+        <div class="regis_col">
+            <form class="form_regis" action="register.php" method="post">
+                <ul>
+                    <li><label>First Name</label></li>
+                    <li><input type="text" name="fname"></li>
+                    <li><label>Last Name</label></li>
+                    <li><input type="text" name="lname"> </li>
+                    <li><label>New Username</label></li>
+                    <li><input type="text" name="Nuser"> </li>
+                    <li><label>New Password</label></li>
+                    <li><input type="text" name="Npass"></li>
+                    <li><button type="submit">Register</button></li>
+                </ul>
+            </form>
+        </div>
     </div>
 </body>
 

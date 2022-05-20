@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <title>Update Account</title>
+    <link rel="stylesheet" href="updated.css">
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+
+    <div class="update_page">
+        <div class="update_col_1">
+            <h3>Update Account</h3>
+            <br>
+            <form action="update.php" method="get">
+                <ul>
+                    <li><label>Insert your old password:</label></li>
+                    <li><input type="text" name="uopass"></li>
+                    <li><label>Insert your new password:</label></li>
+                    <li><input type="text" name="unpass"></li>
+                    <li><button type="submit">Update</button></li>
+                </ul>
+            </form>
+        </div>
+
+        <div class="update_col_2">
+            <img src="src/dinoFlip.png" alt="Dino">
+        </div>
+    </div>
+</body>
+
+<script>
+    $(function() {
+        $("#nav-placeholder").load("nav.html");
+    });
+</script>
+</html>

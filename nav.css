@@ -1,0 +1,67 @@
+nav
+{
+    text-align: right;
+    padding: 10px;
+    height: 60px;
+    border-bottom: 1px solid black;
+}
+
+p.web_title
+{
+    display: inline;
+    font-size: 23px;
+    font-weight: bold;
+    float: left;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+nav ul
+{
+    float: right;
+    list-style: none;
+}
+
+nav ul li
+{
+    float: left;
+    margin-right: 10px;
+}
+
+nav ul li a
+{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 40px;
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+    padding: 8px;
+}
+
+nav ul li a:hover
+{
+    background-color: gainsboro;
+}
+
+nav ul ul
+{
+    position: absolute;
+    display: none;
+} 
+
+nav ul li:hover > ul
+{
+    display: block;
+}
+
+nav ul ul li 
+{
+    float: none;
+    display: list-item;
+    position: relative;
+    width: 150px;
+    font-size: 13px;
+}
